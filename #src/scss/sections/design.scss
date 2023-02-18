@@ -1,0 +1,97 @@
+.design {
+    padding: 120px 0 108px 0;
+    cursor: default;
+    &__title {
+        color: #373737;
+        margin-bottom: 80px;
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16 / 1536 * 100%;
+        @media (max-width: 1200px) {
+            margin: 0 -16 / 1200 * 100%;
+        }
+        @media (max-width: 750px) {
+            margin: 0 -16 / 750 * 100%;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        width: 480 / 1536 * 100%;
+        margin: 16 / 1536 * 100%;
+        min-height: 130px;
+        @media (max-width: 1200px) {
+            width: 568 / 1200 * 100%;
+            margin: 16 / 1200 * 100%;
+        }
+        @media (max-width: 750px) {
+            width: 718 / 750 * 100%;
+            margin: 16 / 750 * 100%;
+        }
+        &-img {
+            min-width: 93px;
+            height: 93px;
+            border-radius: 15px;
+            opacity: 0.1;
+            &::before {
+                opacity: 1;
+            }
+        }
+        &_color1 {
+            background-color: #efbd0d;
+            color: #efbd0d;
+        }
+        &_color2 {
+            background-color: #fb6363;
+            color: #fb6363;
+        }
+        &_color3 {
+            background-color: #a66df5;
+            color: #a66df5;
+        }
+        &_color4 {
+            background-color: #6dd6b0;
+            color: #6dd6b0;
+        }
+        &_color5 {
+            background-color: #708cf0;
+            color: #708cf0;
+        }
+        &_color6 {
+            background-color: #a02e8e;
+            color: #a02e8e;
+        }
+        &-title {
+            background-color: transparent;
+            margin-bottom: 8px;
+            word-wrap: break-word;
+        }
+        &-text {
+            color: #707070;
+            @include fontText(Poppins, 12px, 400);
+            line-height: 18 / 12 * 100%;
+        }
+        &-content {
+            margin-left: 54px;
+            position: relative;
+        }
+        &-icon {
+            width: 101px;
+            height: 101px;
+            border: solid 5px;
+            position: absolute;
+            left: -131px;
+            top: 30px;
+            border-radius: 15px;
+            background-color: transparent;
+            font-size: 43px;
+            &:before {
+                position: relative;
+                top: 32px;
+                left: 20px;
+            }
+        }
+    }
+}
